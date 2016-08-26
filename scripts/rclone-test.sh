@@ -1,0 +1,1 @@
+rclone --drive-formats pdf --filter-from "/home/eric/git/emgit/policies/filter-file.txt" copy "gdrive:" "/home/eric/Temp/rclone" -v

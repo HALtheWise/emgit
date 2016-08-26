@@ -24,6 +24,7 @@
 - /*School/Clubs/**
 
 - DesNat/*Shared Drive/**
+- QEA/s2016 Modules/**
 
 # Include everything else
 + *
