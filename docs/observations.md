@@ -20,9 +20,8 @@ This file contains things I've learned about the behavior of systems the emgit s
 --------
 
 - Files excluded through -exclude rules won't get deleted (the rule is applied to their identity in dest).
-
-
-
+- Filters imported from a file with `--filter-from` are processed from top to bottom, with the matcher aborting when it first comes to a rule that matches.
+- `--files-from` overrides all filters and could be useful for quicky synchronizing a few rapidly-changing files (password database comes to mind)
 
 
 

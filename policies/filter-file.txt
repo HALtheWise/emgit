@@ -1,0 +1,29 @@
+# This file conisists of a set of filter rules for rclone.
+# Syntax described at http://rclone.org/filtering/#filter-from-read-filtering-patterns-from-a-file
+
+# This is the "generic" filter list for performing a full synchronization.
+# It is intended to download most/all frequently used files from Google Drive, while excluding most old or archived files.
+
+
+# Exclude git stored objects (preserving top-level files)
+- .git/objects/*/**
+
+
+
+# Exclude several top-level folders
+- /{QEA,IFTTT,My Tracks,Robotics,.Trash*}/**
+
+# Other folder
+- /Other/Old/**
+- EPGY Summer Institutes/*.zip
++ /Other/Archival/**
+- /Other/Flute/**.{wav,mp3}
+
+# !School folder
+- /*School/Old/**
+- /*School/Clubs/**
+
+- DesNat/*Shared Drive/**
+
+# Include everything else
++ *
